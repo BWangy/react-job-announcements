@@ -18,8 +18,11 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "http://bwangy.github.io/react-job-announcements",
   "scripts": {
     "start": "set HTTPS=true&&react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -45,6 +48,7 @@
   },
   "devDependencies": {
     "eslint-config-react-app": "^7.0.1",
+    "gh-pages": "^6.0.0",
     "jest-editor-support": "^31.1.0"
   }
 }
