@@ -11,21 +11,25 @@ import Contact from "./Components/Contact";
 import Competitive from "./Components/Competitive";
 import ApplyCompetitive from "./Components/ApplyCompetitive";
 import ApplyNonCompetitive from "./Components/ApplyNonCompetitive";
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
     return (
         <>
-            <Navigation />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/Competitive" element={<Competitive />} />
-                <Route path="/ApplyCompetitive" element={<ApplyCompetitive />} />
-                <Route path="/ApplyNonCompetitive" element={<ApplyNonCompetitive />} />
-                <Route path="/NonCompetitive" element={<NonCompetitive />} />
-                <Route path="/AddCompetitive" element={<AddCompetitive />} />
-                <Route path="/AddNonCompetitive" element={<AddNonCompetitive />} />
-                <Route path="/Contact" element={<Contact />} />
-            </Routes>
+            <BrowserRouter basename="/react-job-announcements">
+                <Navigation />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/Competitive" element={<Competitive />} />
+                    <Route path="/ApplyCompetitive" element={<ApplyCompetitive />} />
+                    <Route path="/ApplyNonCompetitive" element={<ApplyNonCompetitive />} />
+                    <Route path="/NonCompetitive" element={<NonCompetitive />} />
+                    <Route path="/AddCompetitive" element={<AddCompetitive />} />
+                    <Route path="/AddNonCompetitive" element={<AddNonCompetitive />} />
+                    <Route path="/Contact" element={<Contact />} />
+                </Routes>
+            </BrowserRouter>
+
         </>
     );
 };

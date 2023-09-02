@@ -3,16 +3,17 @@ import { NavDropdown, Navbar, NavbarBrand } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import "./Navbar.css";
+import { Link } from "react-router-dom"; // Import the Link component
 
 const Navigation = () => {
     return (
         <Navbar
             expand="lg"
             className="navbar-light border-bottom box-shadow mb-3"
-            style={{ backgroundColor: "#EFEFEF"} }
+            style={{ backgroundColor: "#EFEFEF" }}
         >
             <Container>
-                <NavbarBrand href="/">
+                <NavbarBrand as={Link} to="/"> {/* Use Link component for the NavbarBrand */}
                     <img
                         src="https://dynamiclearningmaps.org/sites/default/files/pictures/states/NJ_state.png"
                         alt="New Jersey"
@@ -21,23 +22,22 @@ const Navigation = () => {
                 <div className="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <Nav className="flex-grow-1">
                         <NavDropdown title="Postings">
-                            <NavDropdown.Item href="/Competitive">
+                            <NavDropdown.Item as={Link} to="/Competitive"> {/* Use Link component */}
                                 <span style={{ color: "#015498" }}>Competitive</span>
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="/NonCompetitive">
+                            <NavDropdown.Item as={Link} to="/NonCompetitive"> {/* Use Link component */}
                                 <span style={{ color: "#015498" }}>Non-Competitive</span>
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Add New">
-                            <NavDropdown.Item href="/AddCompetitive">
+                            <NavDropdown.Item as={Link} to="/AddCompetitive"> {/* Use Link component */}
                                 <span style={{ color: "#015498" }}>Competitive</span>
                             </NavDropdown.Item>
-
-                            <NavDropdown.Item href="/AddNonCompetitive">
+                            <NavDropdown.Item as={Link} to="/AddNonCompetitive"> {/* Use Link component */}
                                 <span style={{ color: "#015498" }}>Non-Competitive</span>
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link className="text-dark" href="/Contact">
+                        <Nav.Link className="text-dark" as={Link} to="/Contact"> {/* Use Link component */}
                             Contact Us
                         </Nav.Link>
                     </Nav>
