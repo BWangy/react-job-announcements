@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-job-announcements/static/css/main.592029d1.css",
+    "main.js": "/react-job-announcements/static/js/main.cfed70ba.js",
+    "static/js/498.13854f47.chunk.js": "/react-job-announcements/static/js/498.13854f47.chunk.js",
+    "static/js/703.39107e6e.chunk.js": "/react-job-announcements/static/js/703.39107e6e.chunk.js",
+    "static/js/513.7bc10be3.chunk.js": "/react-job-announcements/static/js/513.7bc10be3.chunk.js",
+    "index.html": "/react-job-announcements/index.html",
+    "main.592029d1.css.map": "/react-job-announcements/static/css/main.592029d1.css.map",
+    "main.cfed70ba.js.map": "/react-job-announcements/static/js/main.cfed70ba.js.map",
+    "498.13854f47.chunk.js.map": "/react-job-announcements/static/js/498.13854f47.chunk.js.map",
+    "703.39107e6e.chunk.js.map": "/react-job-announcements/static/js/703.39107e6e.chunk.js.map",
+    "513.7bc10be3.chunk.js.map": "/react-job-announcements/static/js/513.7bc10be3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.592029d1.css",
+    "static/js/main.cfed70ba.js"
+  ]
+}
