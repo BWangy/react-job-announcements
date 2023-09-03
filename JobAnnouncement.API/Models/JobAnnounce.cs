@@ -25,6 +25,7 @@
         public string title { get; set; }
         public string strClosingDate { get; set; }
         public DateTime datClosingDate { get; set; }
+        public string strOpenDate { get; set; }
         public DateTime datOpenDate { get; set; }
         public string? department { get; set; }
         public int departmentId { get; set; }

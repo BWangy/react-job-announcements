@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "reactapp", "reactapp\reactapp.esproj", "{B3274E00-2BE1-4DBE-AFC2-0DE8F33A0FE8}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobAnnouncement.API", "JobAnnouncement.API\JobAnnouncement.API.csproj", "{3D3ACEFD-71AE-450A-8829-A1DED48F9941}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "reactapp", "reactapp\reactapp.esproj", "{07E2B1A8-76AE-4EE9-904D-94890A9ADAC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B3274E00-2BE1-4DBE-AFC2-0DE8F33A0FE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3274E00-2BE1-4DBE-AFC2-0DE8F33A0FE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3274E00-2BE1-4DBE-AFC2-0DE8F33A0FE8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{B3274E00-2BE1-4DBE-AFC2-0DE8F33A0FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3274E00-2BE1-4DBE-AFC2-0DE8F33A0FE8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B3274E00-2BE1-4DBE-AFC2-0DE8F33A0FE8}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{3D3ACEFD-71AE-450A-8829-A1DED48F9941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3D3ACEFD-71AE-450A-8829-A1DED48F9941}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D3ACEFD-71AE-450A-8829-A1DED48F9941}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D3ACEFD-71AE-450A-8829-A1DED48F9941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07E2B1A8-76AE-4EE9-904D-94890A9ADAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07E2B1A8-76AE-4EE9-904D-94890A9ADAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07E2B1A8-76AE-4EE9-904D-94890A9ADAC7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{07E2B1A8-76AE-4EE9-904D-94890A9ADAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07E2B1A8-76AE-4EE9-904D-94890A9ADAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07E2B1A8-76AE-4EE9-904D-94890A9ADAC7}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

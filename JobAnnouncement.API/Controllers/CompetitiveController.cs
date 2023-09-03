@@ -27,10 +27,15 @@ namespace JobAnnouncement.API.Controllers
 
 
         [HttpGet]
-        public IEnumerable<AnnoForDisplay> Get()
+        public List<AnnoForDisplay> Get()
         {
-            return (from a in _context.CompetitiveJobAnnos
-                    select new AnnoForDisplay  { desc ="This is a competitive announcement!", identifier = a.Id, title = a.Title, strClosingDate = a.ClosingDate.ToString("MM/dd/yyyy"), applicationFee = Convert.ToDouble(a.ApplicationFee), department = a.Department.Description }).ToArray();
+            List<AnnoForDisplay> lsAnno =  (from a in _context.CompetitiveJobAnnos
+                    where a.OpenDate <= DateTime.Today && a.ClosingDate >= DateTime.Today 
+                    select new AnnoForDisplay  { desc ="This is a competitive announcement!",  identifier = a.Id, title = a.Title,
+                        strOpenDate = a.OpenDate.ToString("MM/dd/yyyy"), strClosingDate = a.ClosingDate.ToString("MM/dd/yyyy"), 
+                        applicationFee = Convert.ToDouble(a.ApplicationFee), department = a.Department.Description }).ToList();
+       
+            return lsAnno;
         }
 
         [HttpPost]

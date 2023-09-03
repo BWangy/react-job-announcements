@@ -25,7 +25,8 @@ namespace JobAnnouncement.API.Controllers
         public IEnumerable<AnnoForDisplay> Get()
         {
             return (from a in _context.NonCompetitiveJobAnnos
-                    select new AnnoForDisplay { desc = "This is a non-competitive announcement!", identifier = a.Id, title = a.Title, strClosingDate = a.ClosingDate.ToString("MM/dd/yyyy"), restriction = a.Restriction, department = a.Department.Description }).ToArray();
+                    where a.OpenDate <= DateTime.Today && a.ClosingDate >= DateTime.Today
+                    select new AnnoForDisplay { desc = "This is a non-competitive announcement!", identifier = a.Id, title = a.Title, strOpenDate = a.OpenDate.ToString("MM/dd/yyyy"), strClosingDate = a.ClosingDate.ToString("MM/dd/yyyy"), restriction = a.Restriction, department = a.Department.Description }).ToArray();
         }
 
 
